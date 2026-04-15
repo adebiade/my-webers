@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test and must work</title>
+<!--<script>
+
+const radioButtons = document.querySelectorAll('input[name="yourRadioGroupName"]');
+    radioButtons.forEach(button => {
+      button.checked = false;
+    });
+
+
+
+const radioButtons = document.querySelectorAll('input[name="yourRadioGroupName"]');
+    radioButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        if (button.checked) {
+          button.checked = false;
+        }
+      });
+    });
+  </script>-->
+    <script src= "https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+
+</head>
+<body>
+
+  <script type="text/javascript">
+      $(document).ready(function () {
+          $(".check-free").click(function () {
+              $("#free").prop("checked", true);
+          });
+          $(".check-premium").click(function () {
+              $("#premium").prop("checked", true);
+          });
+          $(".reset").click(function () {
+              $("#free").prop("checked", false);
+              $("#premium").prop("checked", false);
+          });
+      });
+  </script>
+
+
+    <h1 style="color: green">
+        GeeksForGeeks
+    </h1>
+
+    <b>
+        jQuery Check/Uncheck Radio Button
+    </b>
+
+    <p>
+        <input type="radio" name="option" id="free">
+            Free Membership
+
+        <input type="radio" name="option" id="premium">
+            Premium Membership
+    </p>
+
+    <p>
+        <button type="button" class="check-free">
+            Get Free
+        </button>
+
+        <button type="button" class="check-premium">
+            Get Premium
+        </button>
+
+        <button type="button" class="reset">
+            Reset options
+        </button>
+    </p>
+
+
+<!--
+<form>
+  <fieldset id="group1">
+    <input type="radio" value="value1" name="group1">
+    <input type="radio" value="value2" name="group1">
+  </fieldset>
+
+  <fieldset id="group2">
+    <input type="radio" value="value1" name="group2">
+    <input type="radio" value="value2" name="group2">
+    <input type="radio" value="value3" name="group2">
+  </fieldset>
+</form>-->
+</body>
+</html>
